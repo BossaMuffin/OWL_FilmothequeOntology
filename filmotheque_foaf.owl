@@ -1,0 +1,1094 @@
+Prefix(:=<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque>
+Import(<http://purl.org/spar/foaf>)
+
+Declaration(Class(:Acteur))
+Declaration(Class(:ActeurDemande))
+Declaration(Class(:Action))
+Declaration(Class(:ArtEtEssai))
+Declaration(Class(:Aventure))
+Declaration(Class(:Biopic))
+Declaration(Class(:Cinema))
+Declaration(Class(:Comédie))
+Declaration(Class(:Comédie_dramatique))
+Declaration(Class(:Critique))
+Declaration(Class(:DessinAnimé))
+Declaration(Class(:Documentaire))
+Declaration(Class(:Documents))
+Declaration(Class(:Drame))
+Declaration(Class(:Fantastique))
+Declaration(Class(:Fiction))
+Declaration(Class(:Film))
+Declaration(Class(:Genres))
+Declaration(Class(:Guerre))
+Declaration(Class(:Horreur))
+Declaration(Class(:Personne))
+Declaration(Class(:Policier))
+Declaration(Class(:Primé))
+Declaration(Class(:Recompense))
+Declaration(Class(:Réalisateur))
+Declaration(Class(:SalleArtEtEssai))
+Declaration(Class(:Science-fiction))
+Declaration(Class(:Spectateur))
+Declaration(Class(:Série))
+Declaration(Class(:Western))
+Declaration(ObjectProperty(:aCommeActeur))
+Declaration(ObjectProperty(:aCommeCaractéristique))
+Declaration(ObjectProperty(:aCommePartiePrenante))
+Declaration(ObjectProperty(:aCommeRéalisateur))
+Declaration(ObjectProperty(:aCommeSpectateur))
+Declaration(ObjectProperty(:aCommeÉpisode))
+Declaration(ObjectProperty(:aDesLieus))
+Declaration(ObjectProperty(:aDesLieusDaction))
+Declaration(ObjectProperty(:aDesLieusDeTournage))
+Declaration(ObjectProperty(:aPourLangue))
+Declaration(ObjectProperty(:aPourLangueOriginelle))
+Declaration(ObjectProperty(:aPourTitre))
+Declaration(ObjectProperty(:aPourTitreOriginel))
+Declaration(ObjectProperty(:aProgrammé))
+Declaration(ObjectProperty(:aRécompensé))
+Declaration(ObjectProperty(:aUneAnnéeDeSortie))
+Declaration(ObjectProperty(:aUneDurée))
+Declaration(ObjectProperty(:estCritiquéPar))
+Declaration(ObjectProperty(:estDeGenre))
+Declaration(ObjectProperty(:estLaDuréeDe))
+Declaration(ObjectProperty(:estLaLangueOriginelleDe))
+Declaration(ObjectProperty(:estLannéeDeSortieDe))
+Declaration(ObjectProperty(:estLeGenreDe))
+Declaration(ObjectProperty(:estLeTitreOriginel))
+Declaration(ObjectProperty(:estProgramméPar))
+Declaration(ObjectProperty(:estRécompenséPar))
+Declaration(ObjectProperty(:estUnActeurDans))
+Declaration(ObjectProperty(:estUnCritiqueDe))
+Declaration(ObjectProperty(:estUnLieuDactionDe))
+Declaration(ObjectProperty(:estUnLieuDe))
+Declaration(ObjectProperty(:estUnLieuDeTournageDe))
+Declaration(ObjectProperty(:estUnRéalisateurDe))
+Declaration(ObjectProperty(:estUnSpectateurDe))
+Declaration(ObjectProperty(:estUnTitreDe))
+Declaration(ObjectProperty(:estUneCaractéristiqueDe))
+Declaration(ObjectProperty(:estUneLangueDe))
+Declaration(ObjectProperty(:estUnePartiePrenanteDe))
+Declaration(ObjectProperty(:estUnÉpisodeDeLaSérie))
+Declaration(DataProperty(:annéeSortie))
+Declaration(DataProperty(:duree))
+Declaration(DataProperty(:langue))
+Declaration(DataProperty(:lieu))
+Declaration(DataProperty(:lieuAction))
+Declaration(DataProperty(:lieuTournage))
+Declaration(DataProperty(:nom))
+Declaration(DataProperty(:string))
+Declaration(DataProperty(:titre))
+Declaration(NamedIndividual(:Action))
+Declaration(NamedIndividual(:AlloCine))
+Declaration(NamedIndividual(:ArtEtEssai))
+Declaration(NamedIndividual(:Aventure))
+Declaration(NamedIndividual(:Balthazar))
+Declaration(NamedIndividual(:Biopic))
+Declaration(NamedIndividual(:Brian_de_Palma))
+Declaration(NamedIndividual(:Burning))
+Declaration(NamedIndividual(:CGR_Agen))
+Declaration(NamedIndividual(:Cendrillon))
+Declaration(NamedIndividual(:Christophe))
+Declaration(NamedIndividual(:Christopher_Nolan))
+Declaration(NamedIndividual(:Claude_Lanzmann))
+Declaration(NamedIndividual(:Claude_Nuridsany))
+Declaration(NamedIndividual(:Comédie))
+Declaration(NamedIndividual(:Comédie_dramatique))
+Declaration(NamedIndividual(:Damien_Chazelle))
+Declaration(NamedIndividual(:Dany_Boon))
+Declaration(NamedIndividual(:David))
+Declaration(NamedIndividual(:Documents))
+Declaration(NamedIndividual(:Drame))
+Declaration(NamedIndividual(:Dunkerque))
+Declaration(NamedIndividual(:Enter_the_Void))
+Declaration(NamedIndividual(:Fantasmagorie))
+Declaration(NamedIndividual(:Fantastique))
+Declaration(NamedIndividual(:George_Lucas))
+Declaration(NamedIndividual(:Gore_Verbinski))
+Declaration(NamedIndividual(:Guerre))
+Declaration(NamedIndividual(:Gérard_Oury))
+Declaration(NamedIndividual(:Harold_Ramis))
+Declaration(NamedIndividual(:Horreur))
+Declaration(NamedIndividual(:Ikram))
+Declaration(NamedIndividual(:Insomnia))
+Declaration(NamedIndividual(:Intouchables))
+Declaration(NamedIndividual(:James_Cameron))
+Declaration(NamedIndividual(:Jean_Douchet))
+Declaration(NamedIndividual(:Jean_Dujardin))
+Declaration(NamedIndividual(:Jean_Réno))
+Declaration(NamedIndividual(:Ken_Annakin))
+Declaration(NamedIndividual(:Kurt_Tucholsky))
+Declaration(NamedIndividual(:La_Grande_Vadrouille))
+Declaration(NamedIndividual(:La_Grande_bellezza))
+Declaration(NamedIndividual(:Le_Brady))
+Declaration(NamedIndividual(:Le_Jour_le_plus_long))
+Declaration(NamedIndividual(:Le_Roi_lion))
+Declaration(NamedIndividual(:Le_Seigneur_des_anneaux))
+Declaration(NamedIndividual(:Lino_Ventura))
+Declaration(NamedIndividual(:Luc_Besson))
+Declaration(NamedIndividual(:Léon))
+Declaration(NamedIndividual(:Maëlle))
+Declaration(NamedIndividual(:Melancholia))
+Declaration(NamedIndividual(:Mimi_Maty))
+Declaration(NamedIndividual(:Mission_impossible))
+Declaration(NamedIndividual(:Mohamed))
+Declaration(NamedIndividual(:Mostra))
+Declaration(NamedIndividual(:Olivier_Nakache))
+Declaration(NamedIndividual(:Omar_Si))
+Declaration(NamedIndividual(:Oscar))
+Declaration(NamedIndividual(:OursDor))
+Declaration(NamedIndividual(:PalmeDor))
+Declaration(NamedIndividual(:Pathé_Massy))
+Declaration(NamedIndividual(:Peter_Bogdanovich))
+Declaration(NamedIndividual(:Peter_Jackson))
+Declaration(NamedIndividual(:Pierre-Julien))
+Declaration(NamedIndividual(:Pirates_des_Caraïbes))
+Declaration(NamedIndividual(:Policier))
+Declaration(NamedIndividual(:Science-fiction))
+Declaration(NamedIndividual(:Scream))
+Declaration(NamedIndividual(:Sergio_Leone))
+Declaration(NamedIndividual(:Shoah))
+Declaration(NamedIndividual(:Slumdog_millionnaire))
+Declaration(NamedIndividual(:Sophie_Marceau))
+Declaration(NamedIndividual(:Soufiane))
+Declaration(NamedIndividual(:Star_Wars))
+Declaration(NamedIndividual(:The_Tree_Of_Life))
+Declaration(NamedIndividual(:Titanic))
+Declaration(NamedIndividual(:Télérama))
+Declaration(NamedIndividual(:UGC_Les_Ulis))
+Declaration(NamedIndividual(:UGC_Roxane))
+Declaration(NamedIndividual(:Un_jour_sans_fin))
+Declaration(NamedIndividual(:Vanessa_Paradis))
+Declaration(NamedIndividual(:Viking))
+Declaration(NamedIndividual(:Wes_Craven))
+Declaration(NamedIndividual(:Western))
+Declaration(NamedIndividual(:Zhoushan))
+Declaration(NamedIndividual(:jean-Luc_Godard))
+Declaration(NamedIndividual(:mk2_Beaubourg))
+Declaration(NamedIndividual(<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Bienvenue_chez_les_Ch’tis>))
+Declaration(NamedIndividual(:First_man_:_le_premier_homme_sur_la_Lune))
+Declaration(NamedIndividual(<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#L'Épée_de_Bois>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Microcosmos_:_le_peuple_de_l’herbe>))
+Declaration(Datatype(xsd:duration))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :aCommeActeur (:aCommeActeur)
+
+AnnotationAssertion(rdfs:comment :aCommeActeur "En général, les films ont au moins acteurs, sinon ils sont de types documentaire, ou bien \"art et essai\""@fr)
+SubObjectPropertyOf(:aCommeActeur :aCommePartiePrenante)
+InverseObjectProperties(:aCommeActeur :estUnActeurDans)
+ObjectPropertyDomain(:aCommeActeur :Film)
+ObjectPropertyRange(:aCommeActeur :Acteur)
+
+# Object Property: :aCommeCaractéristique (:aCommeCaractéristique)
+
+AnnotationAssertion(rdfs:comment :aCommeCaractéristique "Un film a plusieurs caractéristiques.
+Le titre, la durée, la date de sortie, sa langue, son genre... sont des caractéristiques d'un film."@fr)
+SubObjectPropertyOf(:aCommeCaractéristique owl:topObjectProperty)
+ObjectPropertyDomain(:aCommeCaractéristique :Film)
+
+# Object Property: :aCommePartiePrenante (:aCommePartiePrenante)
+
+AnnotationAssertion(rdfs:comment :aCommePartiePrenante "Un film a plusieurs parties prenantes (entités et personnes) qui ont contribué (acteurs, réalisateurs, salle de projection, spectateurs, critiques de films...)"@fr)
+SubObjectPropertyOf(:aCommePartiePrenante owl:topObjectProperty)
+ObjectPropertyDomain(:aCommePartiePrenante :Film)
+
+# Object Property: :aCommeRéalisateur (:aCommeRéalisateur)
+
+AnnotationAssertion(rdfs:comment :aCommeRéalisateur "Un film a au moins un réalisateur (homme ou machine...)."@fr)
+SubObjectPropertyOf(:aCommeRéalisateur :aCommePartiePrenante)
+InverseObjectProperties(:aCommeRéalisateur :estUnRéalisateurDe)
+ObjectPropertyDomain(:aCommeRéalisateur :Film)
+ObjectPropertyRange(:aCommeRéalisateur :Réalisateur)
+
+# Object Property: :aCommeSpectateur (:aCommeSpectateur)
+
+AnnotationAssertion(rdfs:comment :aCommeSpectateur "Un film est visionné par des spectateurs."@fr)
+SubObjectPropertyOf(:aCommeSpectateur :aCommePartiePrenante)
+InverseObjectProperties(:aCommeSpectateur :estUnSpectateurDe)
+ObjectPropertyDomain(:aCommeSpectateur :Film)
+ObjectPropertyRange(:aCommeSpectateur :Spectateur)
+
+# Object Property: :aCommeÉpisode (:aCommeÉpisode)
+
+AnnotationAssertion(rdfs:comment :aCommeÉpisode "Une série (est un film) qui est composé d'au moins deux autres films qui sont ses épisodes."@fr)
+InverseObjectProperties(:aCommeÉpisode :estUnÉpisodeDeLaSérie)
+ObjectPropertyDomain(:aCommeÉpisode :Série)
+ObjectPropertyRange(:aCommeÉpisode :Film)
+
+# Object Property: :aDesLieus (:aDesLieus)
+
+AnnotationAssertion(rdfs:comment :aDesLieus "Un film prend place dans l'espace, que ce soit lors de la réalisation ou bien de la mise en scène.
+Tournage ou action."@fr)
+SubObjectPropertyOf(:aDesLieus :aCommeCaractéristique)
+InverseObjectProperties(:aDesLieus :estUnLieuDe)
+FunctionalObjectProperty(:aDesLieus)
+ObjectPropertyDomain(:aDesLieus :Film)
+ObjectPropertyRange(:aDesLieus DataAllValuesFrom(:lieu xsd:string))
+
+# Object Property: :aDesLieusDaction (:aDesLieusDaction)
+
+AnnotationAssertion(rdfs:comment :aDesLieusDaction "Lieus où se déroule l'action principal"@fr)
+SubObjectPropertyOf(:aDesLieusDaction :aDesLieus)
+InverseObjectProperties(:aDesLieusDaction :estUnLieuDactionDe)
+ObjectPropertyRange(:aDesLieusDaction DataAllValuesFrom(:lieuAction xsd:string))
+
+# Object Property: :aDesLieusDeTournage (:aDesLieusDeTournage)
+
+AnnotationAssertion(rdfs:comment :aDesLieusDeTournage "Lieus ou le film a été tourné"@fr)
+SubObjectPropertyOf(:aDesLieusDeTournage :aDesLieus)
+InverseObjectProperties(:aDesLieusDeTournage :estUnLieuDeTournageDe)
+ObjectPropertyRange(:aDesLieusDeTournage DataAllValuesFrom(:lieuTournage xsd:string))
+
+# Object Property: :aPourLangue (:aPourLangue)
+
+AnnotationAssertion(rdfs:comment :aPourLangue "Un film peut être visible dans plusiqueurs langue. Donc une langue peut être attribué à un film."@fr)
+SubObjectPropertyOf(:aPourLangue :aCommeCaractéristique)
+InverseObjectProperties(:aPourLangue :estUneLangueDe)
+FunctionalObjectProperty(:aPourLangue)
+ObjectPropertyDomain(:aPourLangue :Film)
+ObjectPropertyRange(:aPourLangue DataAllValuesFrom(:langue xsd:language))
+
+# Object Property: :aPourLangueOriginelle (:aPourLangueOriginelle)
+
+AnnotationAssertion(rdfs:comment :aPourLangueOriginelle "Mais il n'y a qu'une seule langue originelle pour un film. Les autres sont des doublage, ou des sous-titrage..."@fr)
+SubObjectPropertyOf(:aPourLangueOriginelle :aPourLangue)
+InverseObjectProperties(:aPourLangueOriginelle :estLaLangueOriginelleDe)
+ObjectPropertyDomain(:aPourLangueOriginelle :Film)
+ObjectPropertyRange(:aPourLangueOriginelle DataAllValuesFrom(:langue xsd:language))
+
+# Object Property: :aPourTitre (:aPourTitre)
+
+AnnotationAssertion(rdfs:comment :aPourTitre "Un film peut avoir plusieurs titre. SOuvent en fonction du pays de diffusion, ou bien même de l'époque."@fr)
+SubObjectPropertyOf(:aPourTitre :aCommeCaractéristique)
+InverseObjectProperties(:aPourTitre :estUnTitreDe)
+FunctionalObjectProperty(:aPourTitre)
+ObjectPropertyDomain(:aPourTitre :Film)
+ObjectPropertyRange(:aPourTitre DataAllValuesFrom(:titre xsd:string))
+
+# Object Property: :aPourTitreOriginel (:aPourTitreOriginel)
+
+AnnotationAssertion(rdfs:comment :aPourTitreOriginel "Il n'y a qu'un seul titre originel pour un film, c'est sovent le titre dans la langue originelle"@fr)
+SubObjectPropertyOf(:aPourTitreOriginel :aPourTitre)
+InverseObjectProperties(:aPourTitreOriginel :estLeTitreOriginel)
+ObjectPropertyDomain(:aPourTitreOriginel :Film)
+ObjectPropertyRange(:aPourTitreOriginel DataAllValuesFrom(:titre xsd:string))
+
+# Object Property: :aProgrammé (:aProgrammé)
+
+AnnotationAssertion(rdfs:comment :aProgrammé "Une salle de cinéma peut avoir programmé au moins une fois la projection d'un film."@fr)
+SubObjectPropertyOf(:aProgrammé :estUnePartiePrenanteDe)
+InverseObjectProperties(:aProgrammé :estProgramméPar)
+ObjectPropertyDomain(:aProgrammé :Cinema)
+ObjectPropertyRange(:aProgrammé :Film)
+ObjectPropertyRange(:aProgrammé :Genres)
+
+# Object Property: :aRécompensé (:aRécompensé)
+
+AnnotationAssertion(rdfs:comment :aRécompensé "Une récompense est attribué à un film"@fr)
+SubObjectPropertyOf(:aRécompensé :estUnePartiePrenanteDe)
+InverseObjectProperties(:aRécompensé :estRécompenséPar)
+ObjectPropertyDomain(:aRécompensé :Recompense)
+ObjectPropertyRange(:aRécompensé :Primé)
+
+# Object Property: :aUneAnnéeDeSortie (:aUneAnnéeDeSortie)
+
+AnnotationAssertion(rdfs:comment :aUneAnnéeDeSortie "Le film a une date de première sortie dans le monde. On parle de cette date."@fr)
+SubObjectPropertyOf(:aUneAnnéeDeSortie :aCommeCaractéristique)
+InverseObjectProperties(:aUneAnnéeDeSortie :estLannéeDeSortieDe)
+FunctionalObjectProperty(:aUneAnnéeDeSortie)
+ObjectPropertyDomain(:aUneAnnéeDeSortie :Film)
+ObjectPropertyRange(:aUneAnnéeDeSortie DataAllValuesFrom(:annéeSortie xsd:integer))
+
+# Object Property: :aUneDurée (:aUneDurée)
+
+AnnotationAssertion(rdfs:comment :aUneDurée "U film a une durée total. une version courte ou longue serait un autre film."@fr)
+SubObjectPropertyOf(:aUneDurée :aCommeCaractéristique)
+InverseObjectProperties(:aUneDurée :estLaDuréeDe)
+FunctionalObjectProperty(:aUneDurée)
+ObjectPropertyDomain(:aUneDurée :Film)
+ObjectPropertyRange(:aUneDurée DataAllValuesFrom(:duree xsd:duration))
+
+# Object Property: :estCritiquéPar (:estCritiquéPar)
+
+AnnotationAssertion(rdfs:comment :estCritiquéPar "Un film peut être critiqué par un critique cinéma (professionel ou non). Mais il vaut mieux que le critique est été spectateur du film."@fr)
+SubObjectPropertyOf(:estCritiquéPar :aCommePartiePrenante)
+InverseObjectProperties(:estCritiquéPar :estUnCritiqueDe)
+ObjectPropertyDomain(:estCritiquéPar :Film)
+ObjectPropertyRange(:estCritiquéPar :Critique)
+
+# Object Property: :estDeGenre (:estDeGenre)
+
+AnnotationAssertion(rdfs:comment :estDeGenre "Action, western, science fiction, etc, sont des genres possibles pour un film. On a déja vu des westerns autobiographiques ou même des sciences fictions épic fantasy..."@fr)
+SubObjectPropertyOf(:estDeGenre :aCommeCaractéristique)
+InverseObjectProperties(:estDeGenre :estLeGenreDe)
+FunctionalObjectProperty(:estDeGenre)
+ObjectPropertyDomain(:estDeGenre :Film)
+ObjectPropertyRange(:estDeGenre :Genres)
+
+# Object Property: :estLaDuréeDe (:estLaDuréeDe)
+
+AnnotationAssertion(rdfs:comment :estLaDuréeDe "La durée d'un film"@fr)
+SubObjectPropertyOf(:estLaDuréeDe :estUneCaractéristiqueDe)
+ObjectPropertyDomain(:estLaDuréeDe DataAllValuesFrom(:duree xsd:duration))
+ObjectPropertyRange(:estLaDuréeDe :Film)
+
+# Object Property: :estLaLangueOriginelleDe (:estLaLangueOriginelleDe)
+
+AnnotationAssertion(rdfs:comment :estLaLangueOriginelleDe "Mais il n'y a qu'une seule langue originelle pour un film. Les autres sont des doublage, ou des sous-titrage..."@fr)
+SubObjectPropertyOf(:estLaLangueOriginelleDe :estUneLangueDe)
+ObjectPropertyDomain(:estLaLangueOriginelleDe DataAllValuesFrom(:langue xsd:language))
+ObjectPropertyRange(:estLaLangueOriginelleDe :Film)
+
+# Object Property: :estLannéeDeSortieDe (:estLannéeDeSortieDe)
+
+AnnotationAssertion(rdfs:comment :estLannéeDeSortieDe "Prmière date de sortie d'un film -> première fois diffusé dans une salle de cinéma."@fr)
+SubObjectPropertyOf(:estLannéeDeSortieDe :estUneCaractéristiqueDe)
+ObjectPropertyDomain(:estLannéeDeSortieDe DataAllValuesFrom(:annéeSortie xsd:integer))
+ObjectPropertyRange(:estLannéeDeSortieDe :Film)
+
+# Object Property: :estLeGenreDe (:estLeGenreDe)
+
+AnnotationAssertion(rdfs:comment :estLeGenreDe "Action, western, science fiction, etc, sont des genres possibles pour un film. On a déja vu des westerns autobiographiques ou même des sciences fictions épic fantasy..."@fr)
+SubObjectPropertyOf(:estLeGenreDe :estUneCaractéristiqueDe)
+ObjectPropertyDomain(:estLeGenreDe :Genres)
+ObjectPropertyRange(:estLeGenreDe :Film)
+
+# Object Property: :estLeTitreOriginel (:estLeTitreOriginel)
+
+AnnotationAssertion(rdfs:comment :estLeTitreOriginel "Il n'y a qu'un seul titre originel pour un film, c'est sovent le titre dans la langue originelle"@fr)
+SubObjectPropertyOf(:estLeTitreOriginel :estUnTitreDe)
+ObjectPropertyDomain(:estLeTitreOriginel DataAllValuesFrom(:titre xsd:string))
+ObjectPropertyRange(:estLeTitreOriginel :Film)
+
+# Object Property: :estProgramméPar (:estProgramméPar)
+
+AnnotationAssertion(rdfs:comment :estProgramméPar "Un film est visible dans une ou plusieurs salle de cinéma. On dit qu'il est programmé par la salle de projection."@fr)
+SubObjectPropertyOf(:estProgramméPar :aCommePartiePrenante)
+ObjectPropertyDomain(:estProgramméPar :Film)
+ObjectPropertyDomain(:estProgramméPar :Genres)
+ObjectPropertyRange(:estProgramméPar :Cinema)
+
+# Object Property: :estRécompenséPar (:estRécompenséPar)
+
+AnnotationAssertion(rdfs:comment :estRécompenséPar "A reçu une récompense")
+SubObjectPropertyOf(:estRécompenséPar :aCommePartiePrenante)
+FunctionalObjectProperty(:estRécompenséPar)
+ObjectPropertyDomain(:estRécompenséPar :Primé)
+ObjectPropertyRange(:estRécompenséPar :Recompense)
+
+# Object Property: :estUnActeurDans (:estUnActeurDans)
+
+AnnotationAssertion(rdfs:comment :estUnActeurDans "Une personne peut jouer dans un film, alors il est acteur"@fr)
+SubObjectPropertyOf(:estUnActeurDans :estUnePartiePrenanteDe)
+ObjectPropertyDomain(:estUnActeurDans :Acteur)
+ObjectPropertyRange(:estUnActeurDans :Film)
+
+# Object Property: :estUnCritiqueDe (:estUnCritiqueDe)
+
+AnnotationAssertion(rdfs:comment :estUnCritiqueDe "Une personne peut critiquer un film, si il l'a vu, c'est mieux, alors il est un critique de film"@fr)
+SubObjectPropertyOf(:estUnCritiqueDe :estUnePartiePrenanteDe)
+ObjectPropertyDomain(:estUnCritiqueDe :Critique)
+ObjectPropertyRange(:estUnCritiqueDe :Film)
+
+# Object Property: :estUnLieuDactionDe (:estUnLieuDactionDe)
+
+AnnotationAssertion(rdfs:comment :estUnLieuDactionDe "Lieu ù se déroule l'aciton principale."@fr)
+SubObjectPropertyOf(:estUnLieuDactionDe :estUnLieuDe)
+ObjectPropertyDomain(:estUnLieuDactionDe DataAllValuesFrom(:lieuAction xsd:string))
+
+# Object Property: :estUnLieuDe (:estUnLieuDe)
+
+AnnotationAssertion(rdfs:comment :estUnLieuDe "Un film prend place dans l'espace, que ce soit lors de la réalisation ou bien de la mise en scène.
+Tournage ou action."@fr)
+SubObjectPropertyOf(:estUnLieuDe :estUneCaractéristiqueDe)
+ObjectPropertyDomain(:estUnLieuDe DataAllValuesFrom(:lieu xsd:string))
+
+# Object Property: :estUnLieuDeTournageDe (:estUnLieuDeTournageDe)
+
+AnnotationAssertion(rdfs:comment :estUnLieuDeTournageDe "Lieus où a été tourné le film"@fr)
+SubObjectPropertyOf(:estUnLieuDeTournageDe :estUnLieuDe)
+ObjectPropertyDomain(:estUnLieuDeTournageDe DataAllValuesFrom(:lieuTournage xsd:string))
+
+# Object Property: :estUnRéalisateurDe (:estUnRéalisateurDe)
+
+AnnotationAssertion(rdfs:comment :estUnRéalisateurDe "Une personne peut réaliser un fim, ou faire partie de ses réalisateurs"@fr)
+SubObjectPropertyOf(:estUnRéalisateurDe :estUnePartiePrenanteDe)
+ObjectPropertyDomain(:estUnRéalisateurDe :Réalisateur)
+ObjectPropertyRange(:estUnRéalisateurDe :Film)
+
+# Object Property: :estUnSpectateurDe (:estUnSpectateurDe)
+
+AnnotationAssertion(rdfs:comment :estUnSpectateurDe "Une personne peut voir un film dansune salle de cinéma qui l'a programmé, alors il est un spectateur de ce film."@fr)
+SubObjectPropertyOf(:estUnSpectateurDe :estUnePartiePrenanteDe)
+ObjectPropertyDomain(:estUnSpectateurDe :Spectateur)
+ObjectPropertyRange(:estUnSpectateurDe :Film)
+
+# Object Property: :estUnTitreDe (:estUnTitreDe)
+
+AnnotationAssertion(rdfs:comment :estUnTitreDe "Un film peut avoir plusieurs titre. SOuvent en fonction du pays de diffusion, ou bien même de l'époque."@fr)
+SubObjectPropertyOf(:estUnTitreDe :estUneCaractéristiqueDe)
+ObjectPropertyDomain(:estUnTitreDe DataAllValuesFrom(:titre xsd:string))
+ObjectPropertyRange(:estUnTitreDe :Film)
+
+# Object Property: :estUneCaractéristiqueDe (:estUneCaractéristiqueDe)
+
+AnnotationAssertion(rdfs:comment :estUneCaractéristiqueDe "Un film a plusieurs caractéristiques.
+Le titre, la durée, la date de sortie, sa langue, son genre... sont des caractéristiques d'un film."@fr)
+SubObjectPropertyOf(:estUneCaractéristiqueDe owl:topObjectProperty)
+ObjectPropertyRange(:estUneCaractéristiqueDe :Film)
+
+# Object Property: :estUneLangueDe (:estUneLangueDe)
+
+AnnotationAssertion(rdfs:comment :estUneLangueDe "Un film peut être visible dans plusiqueurs langue. Donc une langue peut être attribué à un film."@fr)
+SubObjectPropertyOf(:estUneLangueDe :estUneCaractéristiqueDe)
+ObjectPropertyDomain(:estUneLangueDe DataAllValuesFrom(:langue xsd:language))
+ObjectPropertyRange(:estUneLangueDe :Film)
+
+# Object Property: :estUnePartiePrenanteDe (:estUnePartiePrenanteDe)
+
+AnnotationAssertion(rdfs:comment :estUnePartiePrenanteDe "Toutes les personnes ou les entités qui contribuent au film (acteurs, réalisateurs, salle de projection, spectateurs, critiques de films...)"@fr)
+SubObjectPropertyOf(:estUnePartiePrenanteDe owl:topObjectProperty)
+ObjectPropertyRange(:estUnePartiePrenanteDe :Film)
+
+# Object Property: :estUnÉpisodeDeLaSérie (:estUnÉpisodeDeLaSérie)
+
+AnnotationAssertion(rdfs:comment :estUnÉpisodeDeLaSérie "Un film qui compose une série est un épisode. Une série est considéré comme un film composée."@fr)
+ObjectPropertyDomain(:estUnÉpisodeDeLaSérie :Film)
+ObjectPropertyRange(:estUnÉpisodeDeLaSérie :Série)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :annéeSortie (:annéeSortie)
+
+AnnotationAssertion(rdfs:comment :annéeSortie "Première date de sortie d'un film"@fr)
+SubDataPropertyOf(:annéeSortie owl:topDataProperty)
+DataPropertyDomain(:annéeSortie :Film)
+DataPropertyRange(:annéeSortie xsd:integer)
+DisjointDataProperties(:annéeSortie :duree :langue :string)
+
+# Data Property: :duree (:duree)
+
+AnnotationAssertion(rdfs:comment :duree "Durée total d'un film"@fr)
+DataPropertyDomain(:duree :Film)
+DataPropertyRange(:duree xsd:duration)
+
+# Data Property: :langue (:langue)
+
+AnnotationAssertion(rdfs:comment :langue "Langue utilisée pour le trounage, le doublage, le sous titrage..."@fr)
+DataPropertyDomain(:langue :Film)
+DataPropertyRange(:langue xsd:language)
+
+# Data Property: :lieu (:lieu)
+
+AnnotationAssertion(rdfs:comment :lieu "ieus (tournage, action principale, projection...)"@fr)
+SubDataPropertyOf(:lieu :string)
+FunctionalDataProperty(:lieu)
+DataPropertyDomain(:lieu :Film)
+DataPropertyRange(:lieu xsd:string)
+
+# Data Property: :lieuAction (:lieuAction)
+
+AnnotationAssertion(rdfs:comment :lieuAction "Lieu où se déroule l'action principale d'un film"@fr)
+SubDataPropertyOf(:lieuAction :lieu)
+DataPropertyDomain(:lieuAction :Film)
+DataPropertyRange(:lieuAction xsd:string)
+
+# Data Property: :lieuTournage (:lieuTournage)
+
+AnnotationAssertion(rdfs:comment :lieuTournage "Lieu réel où a été tourné le film."@fr)
+SubDataPropertyOf(:lieuTournage :lieu)
+DataPropertyDomain(:lieuTournage :Film)
+DataPropertyRange(:lieuTournage xsd:string)
+
+# Data Property: :nom (:nom)
+
+AnnotationAssertion(rdfs:comment :nom "Le nom de quelqun, de quelque-chose")
+SubDataPropertyOf(:nom :string)
+DataPropertyDomain(:nom :Personne)
+DataPropertyRange(:nom xsd:string)
+
+# Data Property: :string (:string)
+
+AnnotationAssertion(rdfs:comment :string "Chaine de caractères"@fr)
+DataPropertyRange(:string xsd:string)
+
+# Data Property: :titre (:titre)
+
+AnnotationAssertion(rdfs:comment :titre "Type titre d'un film (chaine de caractère quelconque pour laisser la largesse d'imagination aux réalisateurs)"@fr)
+SubDataPropertyOf(:titre :string)
+DataPropertyDomain(:titre :Film)
+DataPropertyRange(:titre xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Acteur (:Acteur)
+
+AnnotationAssertion(rdfs:comment :Acteur "Ensemble des humains apparaissant dans un film."@fr)
+EquivalentClasses(:Acteur ObjectMinCardinality(1 :estUnActeurDans :Film))
+SubClassOf(:Acteur :Personne)
+SubClassOf(:Acteur <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: :ActeurDemande (Acteur demandé > 5)
+
+AnnotationAssertion(rdfs:comment :ActeurDemande "Acteur ayant joué dans au moins 5 films différents"@fr)
+AnnotationAssertion(rdfs:label :ActeurDemande "Acteur demandé > 5"@fr)
+EquivalentClasses(:ActeurDemande ObjectMinCardinality(5 :estUnActeurDans :Film))
+SubClassOf(:ActeurDemande :Acteur)
+
+# Class: :Action (:Action)
+
+AnnotationAssertion(rdfs:comment :Action "Ce film compte de nombreuses scènes de bagarres, de poursuites, de cascades diverses.
+
+Exemple : Mission impossible (Brian de Palma, 1996)."@fr)
+SubClassOf(:Action :Fiction)
+
+# Class: :ArtEtEssai (:ArtEtEssai)
+
+AnnotationAssertion(rdfs:comment :ArtEtEssai "Sous-ensemble des oeuvres cinématographiques du genre \"art et essai\", seul type diffusé par les salles de type Art et Essai. Des salles de cinema classiques peuvent diffuser ce type de film."@fr)
+EquivalentClasses(:ArtEtEssai ObjectMinCardinality(1 :estProgramméPar :SalleArtEtEssai))
+SubClassOf(:ArtEtEssai :Genres)
+
+# Class: :Aventure (:Aventure)
+
+AnnotationAssertion(rdfs:comment :Aventure "On raconte une histoire pleine de rebondissements, en général dans des endroits dangereux comme le désert, la jungle… Ou dans des époques lointaines : Moyen-Âge, époque des pirates…
+
+Exemple : Le Seigneur des anneaux (Peter Jackson, 2001), Pirates des Caraïbes (Gore Verbinski, 2007)."@fr)
+SubClassOf(:Aventure :Fiction)
+
+# Class: :Biopic (:Biopic)
+
+AnnotationAssertion(rdfs:comment :Biopic "Ce nouveau genre mêle documents d’époque et scènes reconstituées avec des comédiens.
+
+Exemple : First man : le premier homme sur la Lune (Damien Chazelle, 2018)."@fr)
+SubClassOf(:Biopic :Documentaire)
+
+# Class: :Cinema (Salles de cinéma)
+
+AnnotationAssertion(rdfs:comment :Cinema "Ensemble des salles de cinéma susceptibles de projeter un film (programmation)."@fr)
+AnnotationAssertion(rdfs:label :Cinema "Salles de cinéma"@fr)
+EquivalentClasses(:Cinema ObjectMinCardinality(1 :aProgrammé :Film))
+SubClassOf(:Cinema :Personne)
+
+# Class: :Comédie (:Comédie)
+
+AnnotationAssertion(rdfs:comment :Comédie "Ces films sont destinés à faire rire le public. Le scénario multiplie les gags, les quiproquos…
+
+Les dialogues comportent des jeux de mots ou des expressions drôles.
+
+Exemples : Bienvenue chez les Ch’tis (Dany Boon, 2008), La Grande vadrouille (Gérard Oury, 1966)."@fr)
+SubClassOf(:Comédie :Fiction)
+
+# Class: :Comédie_dramatique (:Comédie_dramatique)
+
+AnnotationAssertion(rdfs:comment :Comédie_dramatique "L’histoire se finit généralement bien.
+
+Exemples : Slumdog millionnaire (Danny Boyle et Loveleen Tandan, 2008), Intouchables (Olivier Nakache, 2011)."@fr)
+SubClassOf(:Comédie_dramatique :Fiction)
+
+# Class: :Critique (:Critique)
+
+AnnotationAssertion(rdfs:comment :Critique "Professionnels dont le travail est d'émettre des avis sur des films."@fr)
+EquivalentClasses(:Critique ObjectMinCardinality(1 :estUnCritiqueDe :Film))
+SubClassOf(:Critique :Personne)
+SubClassOf(:Critique <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: :DessinAnimé (:DessinAnimé)
+
+AnnotationAssertion(rdfs:comment :DessinAnimé "Ces films sont réalisés à l’aide de dessins qui montrent les décors, les personnages, reconstituent les mouvements. On ne voit pas d’acteurs à l’écran mais on les entend prêter leur voix aux personnages.
+
+Les images sont réalisées une par une. Les dessins des premiers dessins animés étaient entièrement dessinés et peints à la main.
+
+Le numérique a permis de grands progrès : les dessins sont réalisés et animés par ordinateur. Aujourd’hui, on les appelle plus souvent « films d’animation ».
+
+Quelques films mêlent scènes tournées avec des acteurs et dessins animés. Le plus célèbre est Qui veut la peau de Roger Rabbit (Robert Zemeckis, 1988).
+
+L’immense majorité des dessins animés sont destinés d’abord aux enfants. Ce genre est né dès les débuts du cinéma en 1895.
+
+Exemples : Fantasmagorie (Emile Cohl, 1908), Cendrillon (Kenneth Branah, 1958), Le Roi lion (Rogers Allers et Rob Minkoff (1994)."@fr)
+SubClassOf(:DessinAnimé :Genres)
+SubClassOf(:DessinAnimé ObjectExactCardinality(0 :aCommeActeur :Acteur))
+
+# Class: :Documentaire (:Documentaire)
+
+SubClassOf(:Documentaire :Genres)
+SubClassOf(:Documentaire ObjectExactCardinality(0 :aCommeActeur :Acteur))
+
+# Class: :Documents (:Documents)
+
+AnnotationAssertion(rdfs:comment :Documents "Ces films montrent des événements, des enquêtes, des témoignages. Les personnes qui témoignent sont des personnes réelles qui s’expriment avec leurs propres mots. Le metteur en scène peut ajouter un récit qui accompagne et explique les images.
+
+Exemples : Shoah (Claude Lanzmann, 1995) raconte la déportation des juifs pendant la Seconde Guerre mondiale ; Microcosmos : le peuple de l’herbe (Claude Nuridsany, 1996) montre les animaux de petites tailles qui vivent dans les herbes."@fr)
+SubClassOf(:Documents :Documentaire)
+
+# Class: :Drame (:Drame)
+
+AnnotationAssertion(rdfs:comment :Drame "L’histoire se termine généralement par la mort d’un ou des personnages principaux.
+
+Exemple : Titanic (James Cameron, 1997)"@fr)
+SubClassOf(:Drame :Fiction)
+
+# Class: :Fantastique (:Fantastique)
+
+AnnotationAssertion(rdfs:comment :Fantastique "L’histoire comporte des faits extraordinaires qui ne peuvent pas arriver dans la réalité, comme l’intervention de fées.
+
+Exemple : Un jour sans fin (Harold Ramis, 1993)."@fr)
+SubClassOf(:Fantastique :Fiction)
+
+# Class: :Fiction (:Fiction)
+
+EquivalentClasses(:Fiction ObjectMinCardinality(1 :aCommeActeur :Acteur))
+SubClassOf(:Fiction :Genres)
+
+# Class: :Film (Films)
+
+AnnotationAssertion(rdfs:comment :Film "Ensemble des oeuvres cinématographiques (images animées) susceptibles d'être projetées dans une salle de cinéma (programmation)."@fr)
+AnnotationAssertion(rdfs:label :Film "Films"@fr)
+EquivalentClasses(:Film ObjectMinCardinality(1 :aCommeRéalisateur :Réalisateur))
+
+# Class: :Genres (:Genres)
+
+SubClassOf(:Genres :Film)
+
+# Class: :Guerre (:Guerre)
+
+AnnotationAssertion(rdfs:comment :Guerre "Le film reconstitue un fait de guerre, que ce fait soit réel ou totalement inventé.
+
+L’immense majorité des films réalisés et diffusés sont des films de fiction.
+
+Exemple : Le Jour le plus long (Ken Annakin, 1962) raconte le débarquement du 6 juin 1944 en Normandie, Dunkerque (Christopher Nolan, 2017)."@fr)
+SubClassOf(:Guerre :Fiction)
+
+# Class: :Horreur (:Horreur)
+
+AnnotationAssertion(rdfs:comment :Horreur "Ces films donnent le frisson en montrant des scènes violentes, souvent sanglantes.
+
+Exemple : Scream (Wes Craven, 1996)."@fr)
+SubClassOf(:Horreur :Fiction)
+
+# Class: :Personne (Parties prenantes)
+
+AnnotationAssertion(rdfs:comment :Personne "Ensemble des parties prenantes de l'univers du cinéma. Du créateur au consommateur. 
+Dans l'idéal, hérité de FOAF."@fr)
+AnnotationAssertion(rdfs:label :Personne "Parties prenantes"@fr)
+EquivalentClasses(:Personne ObjectMinCardinality(1 :estUnePartiePrenanteDe :Film))
+
+# Class: :Policier (:Policier)
+
+AnnotationAssertion(rdfs:comment :Policier "Ces films racontent une enquête policière.
+
+Exemples : Léon (Luc Besson, 1994), Insomnia (Christopher Nolan, 2002)."@fr)
+SubClassOf(:Policier :Fiction)
+
+# Class: :Primé (:Primé)
+
+AnnotationAssertion(rdfs:comment :Primé "Films primés. N'est pas exclusif aux genres."@fr)
+EquivalentClasses(:Primé ObjectMinCardinality(1 :estRécompenséPar :Recompense))
+SubClassOf(:Primé :Film)
+
+# Class: :Recompense (Récompenses)
+
+AnnotationAssertion(rdfs:comment :Recompense "Distinction délivré à un professionnel du cinéma pour son travail ou à un film."@fr)
+AnnotationAssertion(rdfs:label :Recompense "Récompenses"@fr)
+EquivalentClasses(:Recompense ObjectIntersectionOf(ObjectSomeValuesFrom(:aRécompensé :Film) ObjectAllValuesFrom(:aRécompensé :Film)))
+SubClassOf(:Recompense :Personne)
+
+# Class: :Réalisateur (:Réalisateur)
+
+AnnotationAssertion(rdfs:comment :Réalisateur "Professionnels dont le travail est de créer des films."@fr)
+EquivalentClasses(:Réalisateur ObjectMinCardinality(1 :estUnRéalisateurDe :Film))
+SubClassOf(:Réalisateur :Personne)
+SubClassOf(:Réalisateur <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: :SalleArtEtEssai (:SalleArtEtEssai)
+
+AnnotationAssertion(rdfs:comment :SalleArtEtEssai "Sous-ensemble des salles de cinéma ne projetant que des films d'art et essais."@fr)
+EquivalentClasses(:SalleArtEtEssai ObjectIntersectionOf(ObjectSomeValuesFrom(:aProgrammé :ArtEtEssai) ObjectAllValuesFrom(:aProgrammé :ArtEtEssai)))
+SubClassOf(:SalleArtEtEssai :Cinema)
+
+# Class: :Science-fiction (:Science-fiction)
+
+AnnotationAssertion(rdfs:comment :Science-fiction "L’histoire se déroule dans le futur ou dans l’espace. Elle raconte souvent l’affrontement entre les forces du bien et les forces du mal.
+
+Exemple : Star Wars (Guerre des étoiles) (George Lucas, 1977)."@fr)
+SubClassOf(:Science-fiction :Fiction)
+
+# Class: :Spectateur (:Spectateur)
+
+AnnotationAssertion(rdfs:comment :Spectateur "Humain qui a visionner au moins un film."@fr)
+EquivalentClasses(:Spectateur ObjectMinCardinality(1 :estUnSpectateurDe :Film))
+SubClassOf(:Spectateur :Personne)
+SubClassOf(:Spectateur <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: :Série (:Série)
+
+AnnotationAssertion(rdfs:comment :Série "Films qui sont composés par d'autres films (épisodes)"@fr)
+EquivalentClasses(:Série ObjectIntersectionOf(ObjectSomeValuesFrom(:aCommeÉpisode :Film) ObjectAllValuesFrom(:aCommeÉpisode :Film)))
+SubClassOf(:Série :Film)
+
+# Class: :Western (:Western)
+
+AnnotationAssertion(rdfs:comment :Western "On les appelle aussi films de cow-boys. Ils se situent pendant la conquête de l’Ouest américain, au XIXe siècle. D’où leur nom de « western » qui signifie « ouest lointain ».
+
+Exemple : Il était une fois dans l’ouest (Sergio Leone, 1968). Ce film a la particularité d’avoir été réalisé par un metteur en scène italien qui a tourné aux États-Unis, en Espagne et en Italie."@fr)
+SubClassOf(:Western :Fiction)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :AlloCine (:AlloCine)
+
+ClassAssertion(:Critique :AlloCine)
+
+# Individual: :Balthazar (:Balthazar)
+
+ClassAssertion(:Spectateur :Balthazar)
+
+# Individual: :Brian_de_Palma (:Brian_de_Palma)
+
+ClassAssertion(:Réalisateur :Brian_de_Palma)
+
+# Individual: :Burning (:Burning)
+
+ClassAssertion(:ArtEtEssai :Burning)
+
+# Individual: :CGR_Agen (:CGR_Agen)
+
+ClassAssertion(:Cinema :CGR_Agen)
+
+# Individual: :Cendrillon (:Cendrillon)
+
+ClassAssertion(:DessinAnimé :Cendrillon)
+
+# Individual: :Christophe (:Christophe)
+
+ClassAssertion(:Spectateur :Christophe)
+
+# Individual: :Christopher_Nolan (:Christopher_Nolan)
+
+ClassAssertion(:Réalisateur :Christopher_Nolan)
+
+# Individual: :Claude_Lanzmann (:Claude_Lanzmann)
+
+ClassAssertion(:Réalisateur :Claude_Lanzmann)
+
+# Individual: :Claude_Nuridsany (:Claude_Nuridsany)
+
+ClassAssertion(:Réalisateur :Claude_Nuridsany)
+
+# Individual: :Damien_Chazelle (:Damien_Chazelle)
+
+ClassAssertion(:Réalisateur :Damien_Chazelle)
+
+# Individual: :Dany_Boon (:Dany_Boon)
+
+ClassAssertion(:Réalisateur :Dany_Boon)
+
+# Individual: :David (:David)
+
+ClassAssertion(:Spectateur :David)
+
+# Individual: :Dunkerque (:Dunkerque)
+
+ClassAssertion(:Guerre :Dunkerque)
+
+# Individual: :Enter_the_Void (:Enter_the_Void)
+
+ClassAssertion(:ArtEtEssai :Enter_the_Void)
+
+# Individual: :Fantasmagorie (:Fantasmagorie)
+
+ClassAssertion(:DessinAnimé :Fantasmagorie)
+
+# Individual: :George_Lucas (:George_Lucas)
+
+ClassAssertion(:Réalisateur :George_Lucas)
+
+# Individual: :Gore_Verbinski (:Gore_Verbinski)
+
+ClassAssertion(:Réalisateur :Gore_Verbinski)
+
+# Individual: :Gérard_Oury (:Gérard_Oury)
+
+ClassAssertion(:Réalisateur :Gérard_Oury)
+
+# Individual: :Harold_Ramis (:Harold_Ramis)
+
+ClassAssertion(:Réalisateur :Harold_Ramis)
+
+# Individual: :Ikram (:Ikram)
+
+ClassAssertion(:Spectateur :Ikram)
+
+# Individual: :Insomnia (:Insomnia)
+
+ClassAssertion(:Policier :Insomnia)
+
+# Individual: :Intouchables (:Intouchables)
+
+ClassAssertion(:Comédie_dramatique :Intouchables)
+
+# Individual: :James_Cameron (:James_Cameron)
+
+ClassAssertion(:Réalisateur :James_Cameron)
+
+# Individual: :Jean_Douchet (:Jean_Douchet)
+
+ClassAssertion(:Critique :Jean_Douchet)
+
+# Individual: :Jean_Dujardin (:Jean_Dujardin)
+
+ClassAssertion(:Acteur :Jean_Dujardin)
+
+# Individual: :Jean_Réno (:Jean_Réno)
+
+ClassAssertion(:Acteur :Jean_Réno)
+ObjectPropertyAssertion(:estUnActeurDans :Jean_Réno :Léon)
+
+# Individual: :Ken_Annakin (:Ken_Annakin)
+
+ClassAssertion(:Réalisateur :Ken_Annakin)
+
+# Individual: :Kurt_Tucholsky (:Kurt_Tucholsky)
+
+ClassAssertion(:Critique :Kurt_Tucholsky)
+
+# Individual: :La_Grande_Vadrouille (:La_Grande_Vadrouille)
+
+ClassAssertion(Annotation(rdfs:comment "Gérard Oury") :Comédie :La_Grande_Vadrouille)
+
+# Individual: :La_Grande_bellezza (:La_Grande_bellezza)
+
+ClassAssertion(:ArtEtEssai :La_Grande_bellezza)
+
+# Individual: :Le_Brady (:Le_Brady)
+
+ClassAssertion(:SalleArtEtEssai :Le_Brady)
+
+# Individual: :Le_Jour_le_plus_long (:Le_Jour_le_plus_long)
+
+ClassAssertion(:Guerre :Le_Jour_le_plus_long)
+
+# Individual: :Le_Roi_lion (:Le_Roi_lion)
+
+ClassAssertion(:DessinAnimé :Le_Roi_lion)
+
+# Individual: :Le_Seigneur_des_anneaux (:Le_Seigneur_des_anneaux)
+
+ClassAssertion(Annotation(rdfs:comment "Peter Jackson") :Aventure :Le_Seigneur_des_anneaux)
+
+# Individual: :Lino_Ventura (:Lino_Ventura)
+
+ClassAssertion(:Acteur :Lino_Ventura)
+
+# Individual: :Luc_Besson (:Luc_Besson)
+
+ClassAssertion(:Réalisateur :Luc_Besson)
+
+# Individual: :Léon (:Léon)
+
+ClassAssertion(:Policier :Léon)
+
+# Individual: :Maëlle (:Maëlle)
+
+ClassAssertion(:Spectateur :Maëlle)
+
+# Individual: :Melancholia (:Melancholia)
+
+ClassAssertion(:ArtEtEssai :Melancholia)
+
+# Individual: :Mimi_Maty (:Mimi_Maty)
+
+ClassAssertion(:Acteur :Mimi_Maty)
+
+# Individual: :Mission_impossible (:Mission_impossible)
+
+ClassAssertion(Annotation(rdfs:comment "Brian de Palma") :Action :Mission_impossible)
+
+# Individual: :Mohamed (:Mohamed)
+
+ClassAssertion(:Spectateur :Mohamed)
+
+# Individual: :Mostra (:Mostra)
+
+AnnotationAssertion(rdfs:comment :Mostra "La Mostra de Venise, ou le Festival international du film de Venise (en italien : Mostra internazionale d'arte cinematografica di Venezia), est un festival de cinéma international qui se déroule annuellement en septembre, dans l'historique Palais du cinéma, sur le lungomare Marconi, au Lido de Venise."@fr)
+ClassAssertion(Annotation(rdfs:comment "La Mostra de Venise, ou le Festival international du film de Venise (en italien : Mostra internazionale d'arte cinematografica di Venezia), est un festival de cinéma international qui se déroule annuellement en septembre, dans l'historique Palais du cinéma, sur le lungomare Marconi, au Lido de Venise."@fr) :Recompense :Mostra)
+
+# Individual: :Olivier_Nakache (:Olivier_Nakache)
+
+ClassAssertion(:Réalisateur :Olivier_Nakache)
+
+# Individual: :Omar_Si (:Omar_Si)
+
+ClassAssertion(:Acteur :Omar_Si)
+
+# Individual: :Oscar (:Oscar)
+
+AnnotationAssertion(rdfs:comment :Oscar "Les Oscars du cinéma (Academy Awards) sont des récompenses cinématographiques américaines décernées chaque année depuis 1929 à Los Angeles et destinées à saluer l'excellence des productions américaines et internationales du cinéma. L'attribution de ces distinctions dans les domaines choisis pour représenter les métiers de la création cinématographique (réalisation, interprétation, scénario, technique) est organisée, gérée et dirigée par l'association professionnelle Academy of Motion Picture Arts and Sciences (Académie des arts et des sciences du cinéma)."@fr)
+ClassAssertion(Annotation(rdfs:comment "Les Oscars du cinéma sont des récompenses cinématographiques américaines décernées chaque année depuis 1929 à Los Angeles et destinées à saluer l'excellence des productions américaines et internationales du cinéma."@fr) :Recompense :Oscar)
+
+# Individual: :OursDor (:OursDor)
+
+AnnotationAssertion(rdfs:comment :OursDor "L’Ours d'or d'honneur (Goldene Ehrenbär) est une récompense décernée depuis 1982 au cours du Festival de Berlin pour récompenser une carrière particulièrement brillante dans le cinéma, et souvent remise à un acteur ou une actrice."@fr)
+ClassAssertion(Annotation(rdfs:comment "L'Ours d'or ou Ours d'or du meilleur film est la plus prestigieuse récompense décernée lors du Festival de Berlin depuis 1951. Il est attribué par le jury officiel à un long métrage de la compétition internationale. L'ours est le symbole de la ville de Berlin."@fr) :Recompense :OursDor)
+
+# Individual: :PalmeDor (:PalmeDor)
+
+AnnotationAssertion(rdfs:comment :PalmeDor "La Palme d'or est la récompense suprême décernée par le jury officiel du Festival de Cannes. Elle est accordée au meilleur film de la sélection officielle, élu parmi ceux en compétition."@fr)
+ClassAssertion(Annotation(rdfs:comment "Le Festival de Cannes est un festival de cinéma international se déroulant chaque année à Cannes durant douze jours pendant la seconde quinzaine du mois de mai. Les principales projections ont lieu au Palais des festivals situé à l'entrée de la promenade de la Croisette."@fr) :Recompense :PalmeDor)
+
+# Individual: :Pathé_Massy (:Pathé_Massy)
+
+ClassAssertion(:Cinema :Pathé_Massy)
+
+# Individual: :Peter_Bogdanovich (:Peter_Bogdanovich)
+
+ClassAssertion(:Critique :Peter_Bogdanovich)
+
+# Individual: :Peter_Jackson (:Peter_Jackson)
+
+ClassAssertion(:Réalisateur :Peter_Jackson)
+
+# Individual: :Pierre-Julien (:Pierre-Julien)
+
+ClassAssertion(:Spectateur :Pierre-Julien)
+
+# Individual: :Pirates_des_Caraïbes (:Pirates_des_Caraïbes)
+
+ClassAssertion(Annotation(rdfs:comment "Gore Verbinski") :Aventure :Pirates_des_Caraïbes)
+
+# Individual: :Scream (:Scream)
+
+ClassAssertion(:Horreur :Scream)
+
+# Individual: :Sergio_Leone (:Sergio_Leone)
+
+ClassAssertion(:Réalisateur :Sergio_Leone)
+
+# Individual: :Shoah (:Shoah)
+
+ClassAssertion(:Documents :Shoah)
+
+# Individual: :Slumdog_millionnaire (:Slumdog_millionnaire)
+
+ClassAssertion(:Comédie_dramatique :Slumdog_millionnaire)
+
+# Individual: :Sophie_Marceau (:Sophie_Marceau)
+
+ClassAssertion(:Acteur :Sophie_Marceau)
+
+# Individual: :Soufiane (:Soufiane)
+
+ClassAssertion(:Spectateur :Soufiane)
+
+# Individual: :Star_Wars (:Star_Wars)
+
+ClassAssertion(:Primé :Star_Wars)
+ClassAssertion(:Science-fiction :Star_Wars)
+ClassAssertion(:Série :Star_Wars)
+
+# Individual: :The_Tree_Of_Life (:The_Tree_Of_Life)
+
+ClassAssertion(:ArtEtEssai :The_Tree_Of_Life)
+
+# Individual: :Titanic (:Titanic)
+
+ClassAssertion(:Drame :Titanic)
+
+# Individual: :Télérama (:Télérama)
+
+ClassAssertion(:Critique :Télérama)
+
+# Individual: :UGC_Les_Ulis (:UGC_Les_Ulis)
+
+ClassAssertion(:Cinema :UGC_Les_Ulis)
+
+# Individual: :UGC_Roxane (:UGC_Roxane)
+
+ClassAssertion(:Cinema :UGC_Roxane)
+
+# Individual: :Un_jour_sans_fin (:Un_jour_sans_fin)
+
+ClassAssertion(:Fantastique :Un_jour_sans_fin)
+
+# Individual: :Vanessa_Paradis (:Vanessa_Paradis)
+
+ClassAssertion(:Acteur :Vanessa_Paradis)
+
+# Individual: :Viking (:Viking)
+
+ClassAssertion(:Série :Viking)
+
+# Individual: :Wes_Craven (:Wes_Craven)
+
+ClassAssertion(:Réalisateur :Wes_Craven)
+
+# Individual: :Zhoushan (:Zhoushan)
+
+ClassAssertion(:Spectateur :Zhoushan)
+
+# Individual: :jean-Luc_Godard (:jean-Luc_Godard)
+
+ClassAssertion(:Critique :jean-Luc_Godard)
+
+# Individual: :mk2_Beaubourg (:mk2_Beaubourg)
+
+ClassAssertion(:SalleArtEtEssai :mk2_Beaubourg)
+
+# Individual: <http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Bienvenue_chez_les_Ch’tis> (<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Bienvenue_chez_les_Ch’tis>)
+
+ClassAssertion(Annotation(rdfs:comment "Dany Boon") :Comédie <http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Bienvenue_chez_les_Ch’tis>)
+
+# Individual: :_le_premier_homme_sur_la_Lune (:_le_premier_homme_sur_la_Lune)
+
+ClassAssertion(:Biopic :First_man_:_le_premier_homme_sur_la_Lune)
+
+# Individual: <http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#L'Épée_de_Bois> (<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#L'Épée_de_Bois>)
+
+ClassAssertion(:SalleArtEtEssai <http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#L'Épée_de_Bois>)
+
+# Individual: <http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Microcosmos_:_le_peuple_de_l’herbe> (<http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Microcosmos_:_le_peuple_de_l’herbe>)
+
+ClassAssertion(:Documents <http://www.semanticweb.org/sio/ontologies/2022/10/cumin/filmotheque#Microcosmos_:_le_peuple_de_l’herbe>)
+
+
+DisjointClasses(:DessinAnimé :Documentaire :Fiction)
+DataPropertyAssertion(:annéeSortie _:genid2147483648 "2007"^^xsd:integer)
+DataPropertyAssertion(:annéeSortie _:genid2147483649 "1996"^^xsd:integer)
+DataPropertyAssertion(:annéeSortie _:genid2147483650 "2001"^^xsd:integer)
+DataPropertyAssertion(:annéeSortie _:genid2147483651 "1966"^^xsd:integer)
+DataPropertyAssertion(:annéeSortie _:genid2147483652 "2008"^^xsd:integer)
+DataPropertyAssertion(:annéeSortie _:genid2147483653 "1996"^^xsd:integer)
+AnnotationAssertion(rdfs:comment owl:Thing "Question 8 : Ajouter ce qui vous paraît manquer dans votre ontologie :
+
+1) Selon-moi, pour rendre mon ontologie pertinente et plus puissante, il manque des relations avec des ontologies existantes (FOAF, Dublin core Location, etc...). Je n'ai accès qu'au datatypes et dataclasses par défaut ou celles que j'aurais créées.
+
+2) Deplus, j'aimerais créer des inférences simples mais plus pertinentes pour répondre à des questions comme par exemple :
+- \"Combien de personnes ont vu un film ?\" ;
+- \"Combien a couté ce film ?\".
+
+3) On pourrait ajouté des caractéristiques pour les salles de cinéma (chaine, nom, ville, nombre de salle, nombre de place par salle, etc). Cela pouraait nous permettre de répondre à des question comme, combien de spectateur ont vu ce film le jour de sa sortie en région Parisienne ?
+
+4) On pourrait créer un sytème de versionning des films (volet 1, 2, 3...) et un système pour référencer les variantes (version courtes, versions longues...)."@fr)
+)
